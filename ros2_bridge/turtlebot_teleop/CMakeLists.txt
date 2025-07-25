@@ -11,6 +11,7 @@ add_executable(turtlebot_teleop_node src/turtlebot_teleop_node.cpp)
 ament_target_dependencies(turtlebot_teleop_node
   rclcpp sensor_msgs geometry_msgs std_msgs
 )
+target_compile_features(turtlebot_teleop_node PUBLIC cxx_std_17)
 
 install(TARGETS turtlebot_teleop_node
   DESTINATION lib/${PROJECT_NAME}

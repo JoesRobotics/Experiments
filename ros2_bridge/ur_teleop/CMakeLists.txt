@@ -11,6 +11,7 @@ add_executable(ur_teleop_node src/ur_teleop_node.cpp)
 ament_target_dependencies(ur_teleop_node
   rclcpp sensor_msgs geometry_msgs std_msgs
 )
+target_compile_features(ur_teleop_node PUBLIC cxx_std_17)
 
 install(TARGETS ur_teleop_node
   DESTINATION lib/${PROJECT_NAME}
