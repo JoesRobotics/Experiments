@@ -12,9 +12,10 @@ ament_target_dependencies(franka_teleop_node
   rclcpp sensor_msgs geometry_msgs std_msgs
 )
 target_compile_features(franka_teleop_node PUBLIC cxx_std_17)
-
 install(TARGETS franka_teleop_node
   DESTINATION lib/${PROJECT_NAME}
 )
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+
 
 ament_package()

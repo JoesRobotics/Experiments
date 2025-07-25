@@ -23,5 +23,4 @@ This repo hosts:
    ```bash
    cd Experiments/rl_envs
    python3 example_train.py
-   ```
-5. See `/docs/architecture.md` for details.
+
