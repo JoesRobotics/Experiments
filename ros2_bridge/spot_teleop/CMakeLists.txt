@@ -12,6 +12,7 @@ ament_target_dependencies(spot_teleop_node
   rclcpp sensor_msgs geometry_msgs std_msgs
 )
 target_compile_features(spot_teleop_node PUBLIC cxx_std_17)
+
 install(TARGETS spot_teleop_node
   DESTINATION lib/${PROJECT_NAME}
 )

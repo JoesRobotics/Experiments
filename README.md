@@ -23,14 +23,4 @@ This repo hosts:
    ```bash
    cd Experiments/rl_envs
    python3 example_train.py
-   ```
-5. Launch a teleop node:
-   ```bash
-   ros2 launch spot_teleop spot_teleop.launch.py
-   ```
-   Publish commands from another terminal:
-   ```bash
-   python3 ros2_bridge/scripts/publish_cmd_vel.py
-   ```
-6. See `/docs/architecture.md` for details.
 
