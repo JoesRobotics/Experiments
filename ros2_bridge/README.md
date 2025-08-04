@@ -8,6 +8,9 @@ Packages:
 - **turtlebot_teleop**
 - **ur_teleop**
 
+Additional scripts:
+- `scripts/manus_franka_bridge.py` – forwards a Manus glove's pose and pinch data to a Franka arm and Robotiq gripper.
+
 ## Building
 ```bash
 cd ros2_bridge
