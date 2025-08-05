@@ -26,3 +26,16 @@ python3 scripts/publish_cmd_vel.py
 ```
 Each teleop package has an equivalent launch file.
 
+### Franka Vive Teleop Script
+
+For direct control of a Franka arm with Vive controllers, a helper script is
+available:
+
+```bash
+python3 scripts/franka_vive_teleop.py [--use-fake-hw] [--debug]
+```
+
+By default the script connects to the real robot topic. Pass `--use-fake-hw`
+to target the MuJoCo/fake-hardware endpoint instead. Use `--debug` to enable
+additional logging that can help diagnose issues.
+
